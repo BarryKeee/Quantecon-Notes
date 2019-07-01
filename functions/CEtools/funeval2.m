@@ -23,5 +23,5 @@ function f=funeval2(g,B,order)
   order=fliplr(order+ones(size(order,1),1)*(size(B.vals,1)*(0:d-1)-B.order+1));
   f=zeros(size(B.vals{1},1),size(g,2),kk);   % preallocate
   for i=1:kk
-    f(:,:,i)=cdprodx(B.vals,g,order(i,:));
+    f(:,:,i)=cdprodx_new(B.vals,g,order(i,:));
   end

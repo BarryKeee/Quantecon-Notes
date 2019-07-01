@@ -1,4 +1,4 @@
-function a=cdprodx(b,c,ind)
+function a=cdprodx_new(b,c,ind)
 % CDPRODX  Iterated direct product of cell array times a matrix 
 % USAGE:
 %   a=CDPRODX(B,c,ind);

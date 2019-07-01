@@ -47,7 +47,7 @@
 
 % SOLVE BELLMAN EQUATION
   optset('dpsolve','nres',4);
-  [c,s,v,x] = dpsolve(model,fspace,snodes,vlq,xlq);
+  [c,s,v,x,resid] = dpsolve(model,fspace,snodes,vlq,xlq);
    
 % COMPUTE SHADOW PRICES
   n = [length(s{1}) length(s{2})]; 

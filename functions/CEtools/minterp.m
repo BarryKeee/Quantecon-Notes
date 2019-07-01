@@ -58,7 +58,7 @@ else
     for i=1:d
       B{i}=getbas(scoord{i},s(:,i),evenspacing);
     end
-    xinterp=cdprodx(B,x,d:-1:1);
+    xinterp=cdprodx_new(B,x,d:-1:1);
   end
 end
 
