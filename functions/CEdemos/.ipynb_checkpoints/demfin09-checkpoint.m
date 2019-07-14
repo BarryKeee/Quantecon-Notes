@@ -7,9 +7,9 @@ disp('DEMFIN09 Financial asset calibration demonstration')
 close all
 
 % Define parameters
-kappa = 0.1;
-alpha = 0.1; 
-sigma = 0.1;
+kappa = 0.0363;
+alpha = 0.0692; 
+sigma = 0.0272;
  
 % Create model variable
 clear model

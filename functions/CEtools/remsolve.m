@@ -170,9 +170,9 @@ function [f,fx]=equilibrium(s,x,c,fspace,func,params,e,w,n,m,p)
     [g,gx] = feval(func,'g',s,x,[],e(kk,:),params{:});
     [hnext,hnextder] = fund(c,fspace,g,1);
     eh     = eh    + w(k)*hnext;
-    ehder  = ehder + w(k)*arraymult(hnextder,gx,N,p,n,m);
+    ehder  = ehder + w(k)*arraymult_new(hnextder,gx,N,p,n,m);
     clear hnext hnextder gx g
   end
   [f,fx,feh] = feval(func,'f',s,x,eh,[],params{:});
-  fx = fx + arraymult(feh,ehder,N,m,p,m);
+  fx = fx + arraymult_new(feh,ehder,N,m,p,m);
 return

@@ -240,7 +240,7 @@ function [c,scoord,v,x,resid] = gamesolve(model,fspace,v,x)
       [g,gx] = feval(func,'g',s,x,e(kk,:),params{:});
       [vnext,vs] = fund(c,fspace,g,1);
       v  = v  + delw(k)*vnext;
-      vx = vx + delw(k)*arraymult(vs,gx,ns,1,ds,dx);
+      vx = vx + delw(k)*arraymult_new(vs,gx,ns,1,ds,dx);
     end
     clear g gx 
     vx = vx(:,:,j);
@@ -254,9 +254,9 @@ function [c,scoord,v,x,resid] = gamesolve(model,fspace,v,x)
       [g,gx,gxx] = feval(func,'g',s,x,e(kk,:),params{:});
       [vnext,vs,vss] = fund(c,fspace,g,1);
       v   = v   + delw(k)*vnext;
-      vx  = vx  + delw(k)*arraymult(vs,gx,ns,1,ds,dx);
-      vxx = vxx + delw(k)*(reshape(arraymult(vs,gxx,ns,1,ds,dxx),ns,dx,dx) ...
-                + arraymult(permute(gx,[1 3 2]),arraymult(vss,gx,ns,ds,ds,dx),ns,dx,ds,dx));
+      vx  = vx  + delw(k)*arraymult_new(vs,gx,ns,1,ds,dx);
+      vxx = vxx + delw(k)*(reshape(arraymult_new(vs,gxx,ns,1,ds,dxx),ns,dx,dx) ...
+                + arraymult_new(permute(gx,[1 3 2]),arraymult_new(vss,gx,ns,ds,ds,dx),ns,dx,ds,dx));
     end  
     clear g gx gxx vss
     vx = vx(:,:,j);
