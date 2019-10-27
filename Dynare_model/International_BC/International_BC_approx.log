@@ -1,0 +1,13 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: International_BC_approx.mod:1.1-13: periods: this command is now deprecated and may be removed in a future version of Dynare. Please use the ''periods'' option of the ''simul'' command instead.
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.

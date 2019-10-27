@@ -1,0 +1,14 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: permanent_income.mod:2.1-15: periods: this command is now deprecated and may be removed in a future version of Dynare. Please use the ''periods'' option of the ''simul'' command instead.
+WARNING: permanent_income.mod:40.13-23: dr_algo option is now deprecated, and may be removed in a future version of Dynare
+Found 6 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.

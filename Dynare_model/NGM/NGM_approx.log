@@ -1,0 +1,74 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: NGM_approx.mod:2.1-15: periods: this command is now deprecated and may be removed in a future version of Dynare. Please use the ''periods'' option of the ''simul'' command instead.
+WARNING: NGM_approx.mod:38.13-23: dr_algo option is now deprecated, and may be removed in a future version of Dynare
+Found 4 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
+
+STEADY-STATE RESULTS:
+
+c 		 1.31218
+k 		 19.8754
+l 		 0.271144
+z 		 0
+
+MODEL SUMMARY
+
+  Number of variables:         4
+  Number of stochastic shocks: 1
+  Number of state variables:   2
+  Number of jumpers:           2
+  Number of static variables:  0
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables           e
+e            1.000000
+
+POLICY AND TRANSITION FUNCTIONS
+                                   c               k               l               z
+Constant                    1.312177       19.875419        0.271145               0
+(correction)               -0.000006        0.000012        0.000002               0
+k(-1)                       0.037303        0.973355       -0.002916               0
+z(-1)                       0.589562        1.568055        0.193416        0.950000
+e                           0.002289       -0.004337       -0.000613        0.007000
+k(-1),k(-1)                -0.000342       -0.000130        0.000061               0
+z(-1),k(-1)                 0.011039        0.028178        0.000826               0
+z(-1),z(-1)                 0.230790        1.069247       -0.002947               0
+e,e                         0.000005       -0.000009               0               0
+k(-1),e                     0.000040       -0.000060        0.000009               0
+z(-1),e                     0.001545       -0.003967       -0.000286               0
+
+
+MOMENTS OF SIMULATED VARIABLES
+VARIABLE              MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+c                 1.291058        0.034110        0.001163        0.283783        0.313329
+k                19.436421        0.678484        0.460341        0.239463        0.182051
+l                 0.270979        0.003653        0.000013       -0.254001        0.139136
+z                -0.007843        0.022039        0.000486        0.170511        0.259799
+
+
+CORRELATION OF SIMULATED VARIABLES
+VARIABLE         c       k       l       z
+c           1.0000  0.9576  0.3701  0.7543
+k           0.9576  1.0000  0.1132  0.5362
+l           0.3701  0.1132  1.0000  0.7771
+z           0.7543  0.5362  0.7771  1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES
+VARIABLE         1       2       3       4       5
+c           0.9954  0.9878  0.9789  0.9693  0.9592
+k           0.9980  0.9955  0.9916  0.9863  0.9797
+l           0.8455  0.7789  0.7046  0.6464  0.5951
+z           0.9496  0.8989  0.8467  0.8006  0.7597
+Total computing time : 0h00m06s
+Note: 2 warning(s) encountered in the preprocessor

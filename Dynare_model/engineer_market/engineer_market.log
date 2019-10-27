@@ -1,0 +1,16 @@
+Starting Dynare (version 4.5.7).
+Starting preprocessing of the model file ...
+WARNING: engineer_market.mod:2.1-12: periods: this command is now deprecated and may be removed in a future version of Dynare. Please use the ''periods'' option of the ''simul'' command instead.
+WARNING: engineer_market.mod:34.13-21: dr_algo option is now deprecated, and may be removed in a future version of Dynare
+Substitution of endo leads >= 2: added 3 auxiliary variables and equations.
+Substitution of endo lags >= 2: added 3 auxiliary variables and equations.
+Found 10 equation(s).
+Evaluating expressions...done
+Computing static model derivatives:
+ - order 1
+Computing dynamic model derivatives:
+ - order 1
+ - order 2
+Processing outputs ...
+done
+Preprocessing completed.
